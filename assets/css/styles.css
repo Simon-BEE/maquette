@@ -34,16 +34,20 @@ p.subtitle {
 
 h2, h3, h3 a {
     color: #333;
-    font-size: 1.2vw;
 }
 
 h3 {
     text-transform: uppercase;
+    font-size: 1.2vw;
 }
 
 /*---------
 ----LEFT---
 ---------*/
+
+aside.left nav.menu input {
+    display: none;
+}
 
 aside.left {
     width: 30%;
@@ -199,3 +203,132 @@ footer p {
 /*---------
 ---MEDIA---
 ---------*/
+
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    aside.left {
+        width: 100%;
+        flex-direction: row-reverse;
+        position: relative;
+    }
+
+    .left-head {
+        margin-right: 5%;
+    }
+
+    .left-head h1 {
+        font-size: 5vw !important;
+    }
+
+    .left-head p {
+        display: none;
+    }
+
+    aside.left nav.menu input {
+        display: block;
+        margin-left: 4%;
+    }
+
+    /*----BURGER----*/
+
+    .menu {
+        background-color: #424242;
+        color: #fff;
+        height: 50px;
+        position: relative; 
+    }
+    .menu .burger {
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          color: #fff;
+          font-size: 5vw;
+          outline: 0;
+          line-height: 50px;
+        }
+    .menu .burger:before {
+            content: '☰';
+            font-size: 30px;
+        }
+    .menu .burger:checked + ul {
+            height: calc(100vh - 50px);
+            opacity: 0.9; 
+        }
+    .menu .burger:checked:before {
+            content: 'X'; 
+        }
+    ul {
+        height: 0;
+        background: inherit;
+        overflow: hidden;
+        transition: height .2s;
+        width: 130%; 
+    }
+    ul > * {
+          display: block;
+          letter-spacing: 1px;
+          padding: 0 20px;
+          width: 100%;
+          font-size: 4vw; 
+      }
+
+      /*--------------*/
+
+    div.right {
+        width: 100%;
+        padding: 5% 0 0 0;
+        font-size: 22px !important;
+    }
+
+    header.right-head {
+        padding: 2%;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px !important;
+        text-align: center;
+    }
+
+    .right-head p, .content p, p.number {
+        font-size: 15px !important;
+    }
+
+    div.img-right img{
+    width: 80%;
+    }
+
+    article {
+        flex-direction: column;
+        padding: 5% 0;
+    }
+
+    aside.main-left {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        border: none;
+    }
+
+    aside.main-left p {
+        color: #2196F3!important;
+    }
+
+    footer p {
+        font-size: 12px !important;
+    }
+}
