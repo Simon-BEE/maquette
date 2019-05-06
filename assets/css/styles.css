@@ -52,7 +52,7 @@ aside.left nav.menu input {
 aside.left {
     width: 30%;
     padding: 4% 0;
-    background-color: #424242;
+    background-color: #2a2a2a;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +96,7 @@ nav.menu ul li a{
     display: block;
     width: 100%;
     padding: 10% 0;
-    border-top: 1px solid #5b5b5b;
+    border-top: 1px solid #3a3a3a;
     text-align: center;
     text-transform: uppercase;
     color: #757575;
@@ -128,7 +128,7 @@ header.right-head {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #e6e6e6;
     margin-bottom: 5%;
 }
 
@@ -159,7 +159,7 @@ section.content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #e6e6e6;
     margin-bottom: 4%;
 }
 
@@ -171,11 +171,11 @@ article {
     display: flex;
     width: 80%;
     margin-bottom: 5%;
-    border-bottom: 1px solid #F5F5F5;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 aside.main-left {
-    border-right: 1px solid #F5F5F5;
+    border-right: 1px solid #e6e6e6;
     padding: 2% 5%;
     height: 80%;
 }
@@ -289,7 +289,7 @@ footer p {
           font-size: 4vw; 
       }
 
-      /*--------------*/
+    /*--------------*/
 
     div.right {
         width: 100%;
