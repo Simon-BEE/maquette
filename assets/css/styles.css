@@ -80,6 +80,10 @@ header.left-head p {
     font-size: 1.2vw;
 }
 
+.bold {
+    color: #afafaf;
+}
+
 nav.menu {
     width: 100%;
 }
